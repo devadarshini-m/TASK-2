@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Grid Energy Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Smart Grid Energy Management System</h1>
+    <p>Total Energy Available: {{ status.total_energy }} kWh</p>
+    <p>Current Usage: {{ status.usage }} kWh</p>
+    <p>Threshold: {{ status.threshold }} kWh</p>
+    <form method="post" action="/update">
+        <label for="usage">Update Usage (kWh):</label>
+        <input type="number" id="usage" name="usage" required>
+        <button type="submit">Update</button>
+    </form>
+    {% if status.usage > status.threshold %}
+        <p style="color: red;">Warning: Energy usage exceeds threshold!</p>
+    {% endif %}
+</body>
+</html>

@@ -10,9 +10,10 @@ Duration: JUNE to JULY 2024
 
 Mentor: MUZAMMIL AHMED
 
-Smart Grid Energy Management System
+**Smart Grid Energy Management System**
 
 Overview
+
 The Smart Grid Energy Management System (SGEMS) is designed to optimize the production, distribution, and consumption of electrical energy. It aims to enhance energy efficiency, reduce costs, and improve the reliability of the electrical grid by integrating advanced metering infrastructure, demand response capabilities, and renewable energy sources.
 
 Features
